@@ -1,1 +1,1 @@
-# stir-trek
+# Stir Trek React Native App
