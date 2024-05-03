@@ -12,7 +12,7 @@ export default async function Home() {
   const times = [...new Set(sessions.map(session => session.time))];
 
   return (
-    <main className="py-8">
+    <main>
       <Sessions times={times} sessions={sessions} />
     </main>
   );
