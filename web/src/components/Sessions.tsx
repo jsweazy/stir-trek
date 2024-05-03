@@ -23,7 +23,7 @@ export const Sessions: FC<SessionProps> = ({
   }
 
   return (
-    <div className="flex md:flex-col flex-col-reverse h-screen">
+    <main className="flex md:flex-col flex-col-reverse h-svh overflow-hidden">
       <nav className="flex gap-4 py-5 overflow-y-auto px-8 flex-shrink-0 shadow-md md:shadow-none">
         {times.map(t => (
           <button
@@ -53,6 +53,6 @@ export const Sessions: FC<SessionProps> = ({
           </li>
         ))}
       </ul>
-    </div>
+    </main>
   )
 }

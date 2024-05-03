@@ -12,8 +12,6 @@ export default async function Home() {
   const times = [...new Set(sessions.map(session => session.time))];
 
   return (
-    <main>
-      <Sessions times={times} sessions={sessions} />
-    </main>
+    <Sessions times={times} sessions={sessions} />
   );
 }
