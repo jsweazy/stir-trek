@@ -37,7 +37,7 @@ export const Sessions: FC<SessionProps> = ({
       <ul className="grid gap-5 grid-cols-[repeat(auto-fit,_minmax(min(100%,_max(320px,_100%/5)),_1fr))] px-8">
         {filteredSessions.map(session => (
           <li key={session.id} className="bg-white rounded-lg p-4 shadow-md">
-            <h2 className="font-medium text-xl leading-none mb-2">{session.title}</h2>
+            <h2 className="font-medium text-xl mb-2">{session.title}</h2>
             <p className="text-sm text-muted-foreground">Speaker: {session.speaker}</p>
             <p className="text-sm text-muted-foreground">Room: {session.room}</p>
           </li>
