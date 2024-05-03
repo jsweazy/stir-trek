@@ -38,8 +38,8 @@ export const Sessions: FC<SessionProps> = ({
         {filteredSessions.map(session => (
           <li key={session.id} className="bg-white rounded-lg p-4 shadow-md">
             <h2 className="font-medium text-xl leading-none mb-2">{session.title}</h2>
-            <p className="text-sm text-muted-foreground">{session.speaker}</p>
-            <p className="text-sm text-muted-foreground">{session.room}</p>
+            <p className="text-sm text-muted-foreground">Speaker: {session.speaker}</p>
+            <p className="text-sm text-muted-foreground">Room: {session.room}</p>
           </li>
         ))}
       </ul>
