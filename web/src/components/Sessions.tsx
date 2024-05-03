@@ -34,7 +34,7 @@ export const Sessions: FC<SessionProps> = ({
           </button>
         ))}
       </nav>
-      <ul className="grid gap-5 grid-cols-[repeat(4,minmax(0, 1fr))] px-8">
+      <ul className="grid gap-5 grid-cols-[repeat(auto-fit,_minmax(min(100%,_max(320px,_100%/5)),_1fr))] px-8">
         {filteredSessions.map(session => (
           <li key={session.id} className="bg-white rounded-lg p-4 shadow-md">
             <h2 className="font-medium text-xl leading-none mb-2">{session.title}</h2>
